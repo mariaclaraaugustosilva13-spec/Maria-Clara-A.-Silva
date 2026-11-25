@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio | Maria Clara Augusto Silva</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f8;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #173b57, #287a80);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        header h1 {
+            font-size: 2.3rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            margin: 5px 0;
+        }
+
+        main {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        .project-title {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #173b57;
+        }
+
+        .project-title h2 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            border-top: 4px solid #287a80;
+        }
+
+        .card h3 {
+            color: #287a80;
+            margin-bottom: 12px;
+            font-size: 1.3rem;
+        }
+
+        .card p {
+            font-size: 1rem;
+        }
+
+        footer {
+            background-color: #173b57;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 50px;
+        }
+
+        footer h2 {
+            margin-bottom: 15px;
+        }
+
+        footer p {
+            margin: 8px 0;
+        }
+
+        footer a {
+            color: #8de0d4;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .project-grid {
+                grid-template-columns: 1fr;
+            }
+
+            main {
+                margin: 25px auto;
+            }
+
+            .card {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Maria Clara Augusto Silva</h1>
+        <p>Ciência de Dados</p>
+        <p>Fatec Adamantina</p>
+    </header>
+
+    <main>
+        <section class="project-title">
+            <h2>Meu Projeto</h2>
+            <p>Sensoriamento Remoto: Mapeando a cidade de Adamantina utilizando CBERS-4A</p>
+        </section>
+
+        <section class="project-grid">
+
+            <div class="card">
+                <h3>Problema</h3>
+                <p>
+                    O projeto tem como objetivo realizar o mapeamento urbano
+                    da cidade de Adamantina utilizando imagens de sensoriamento remoto.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>O que eu fiz</h3>
+                <p>
+                    Realizei o pré-processamento da imagem no software QGIS.
+                    Em seguida, criei arquivos para armazenar as amostras e
+                    coletei amostras de duas classes: árvores e outros.
+                    Treinei os algoritmos Random Forest (RF) e Support Vector
+                    Machine (SVM) para classificar toda a imagem.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Como eu fiz</h3>
+                <p>
+                    Utilizei uma imagem do satélite CBERS-4A,
+                    disponibilizada pelo Instituto Nacional de Pesquisas
+                    Espaciais (INPE), para realizar o processamento e a
+                    classificação da imagem no QGIS.
+                </p>
+            </div>
+
+            <div class="card">
+                <h3>Resultado</h3>
+                <p>
+                    O projeto alcançou uma acurácia de 86% na classificação
+                    da imagem, demonstrando os resultados obtidos com os
+                    algoritmos utilizados.
+                </p>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <h2>Contato</h2>
+
+        <p>
+            E-mail:
+            <a href="mailto:mariaclaraaugustosilva13@gmail.com">
+                mariaclaraaugustosilva13@gmail.com
+            </a>
+        </p>
+
+        <p>
+            GitHub:
+            <a href="https://github.com/[seu-usuario]" target="_blank">
+                Meu GitHub
+            </a>
+        </p>
+
+        <p>&copy; 2026 Maria Clara Augusto Silva</p>
+    </footer>
+
+</body>
+</html>
